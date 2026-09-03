@@ -9,11 +9,11 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>مجال الأسنان | مركز مجال الأسنان</title>
-  <link rel="icon" type="image/png" href="assets/majal-logo.png?v=20260903v19">
-  <link rel="shortcut icon" href="assets/majal-logo.png?v=20260903v19">
-  <link rel="apple-touch-icon" href="assets/majal-logo.png?v=20260903v19">
-  <link rel="preload" as="image" href="assets/hero-dental-orbit.png?v=20260903v19">
-  <link rel="preload" as="image" href="assets/majal-logo.png?v=20260903v19">
+  <link rel="icon" type="image/png" href="assets/majal-logo.png?v=20260903v22">
+  <link rel="shortcut icon" href="assets/majal-logo.png?v=20260903v22">
+  <link rel="apple-touch-icon" href="assets/majal-logo.png?v=20260903v22">
+  <link rel="preload" as="image" href="assets/hero-dental-orbit.png?v=20260903v22">
+  <link rel="preload" as="image" href="assets/majal-logo.png?v=20260903v22">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -145,6 +145,27 @@
       .reveal,.service .book-mini{animation:none!important;transition:none!important}
     }
 
+  
+    /* V22: insurance partners are fixed, not animated */
+    .insurance-static{
+      display:flex!important;
+      justify-content:center!important;
+      align-items:center!important;
+      gap:28px!important;
+      transform:none!important;
+      transition:none!important;
+      cursor:default!important;
+      overflow:visible!important;
+      width:100%!important;
+    }
+    .insurance-static .logo-card{
+      flex:0 0 auto!important;
+    }
+    @media(max-width:640px){
+      .insurance-static{gap:14px!important;flex-wrap:wrap!important}
+      .insurance-static .logo-card{min-width:130px!important}
+    }
+
   </style>
 
   <link rel="canonical" href="https://majaldental.com/">
@@ -158,7 +179,7 @@
   <meta property="og:title" content="مركز مجال الأسنان | Majal Dental Center">
   <meta property="og:description" content="رعاية متخصصة لابتسامة أجمل في الخبر. خدمات علاجية وتجميلية متكاملة وحجز مباشر عبر واتساب.">
   <meta property="og:url" content="https://majaldental.com/">
-  <meta property="og:image" content="https://majaldental.com/assets/majal-logo.png?v=20260903v19">
+  <meta property="og:image" content="https://majaldental.com/assets/majal-logo.png?v=20260903v22">
   <meta property="og:image:alt" content="شعار مركز مجال الأسنان">
   <meta property="og:locale" content="ar_SA">
   <meta property="og:locale:alternate" content="en_US">
@@ -166,7 +187,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="مركز مجال الأسنان | Majal Dental Center">
   <meta name="twitter:description" content="ابتسامتك تستحق مجالاً أكبر للعناية. خدمات أسنان متكاملة في الخبر.">
-  <meta name="twitter:image" content="https://majaldental.com/assets/majal-logo.png?v=20260903v19">
+  <meta name="twitter:image" content="https://majaldental.com/assets/majal-logo.png?v=20260903v22">
 
   <script type="application/ld+json">
   {
@@ -176,8 +197,8 @@
     "name": "مركز مجال الأسنان",
     "alternateName": "Majal Dental Center",
     "url": "https://majaldental.com/",
-    "logo": "https://majaldental.com/assets/majal-logo.png?v=20260903v19",
-    "image": "https://majaldental.com/assets/majal-logo.png?v=20260903v19",
+    "logo": "https://majaldental.com/assets/majal-logo.png?v=20260903v22",
+    "image": "https://majaldental.com/assets/majal-logo.png?v=20260903v22",
     "description": "مركز أسنان في الخبر يقدم خدمات علاجية وتجميلية تشمل الفحوصات والحشوات والتبييض والتقويم والزراعة والتركيبات وعلاج اللثة.",
     "telephone": "+966138979922",
     "email": "majaldental@gmail.com",
@@ -240,7 +261,7 @@
 <nav class="nav">
   <div class="container nav-inner">
     <a class="brand" href="#home">
-      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v19" alt="Majal Dental logo" decoding="async">
+      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v22" alt="Majal Dental logo" decoding="async">
       <div class="brand-copy">
         <strong data-ar="مركز مجال الأسنان" data-en="Majal Dental Center">مركز مجال الأسنان</strong>
         <small class="brand-tag" data-ar="ابتسامتك تستحق مجالاً أكبر للعناية" data-en="Your smile deserves a wider Majal of care">ابتسامتك تستحق مجالاً أكبر للعناية</small>
@@ -269,10 +290,10 @@
     <div class="trust-row"><span data-ar="تقنيات حديثة" data-en="Modern technology">تقنيات حديثة</span><span data-ar="فريق متخصص" data-en="Specialist team">فريق متخصص</span><span data-ar="خيارات دفع مرنة" data-en="Flexible payments">خيارات دفع مرنة</span></div>
     <div class="hero-actions"><button class="btn btn-primary" data-book data-ar="احجز موعدك الآن" data-en="Book an appointment">احجز موعدك الآن</button></div>
   </div>
-  <div class="hero-card reveal"><img src="assets/hero-dental-orbit.png?v=20260903v19" alt="Majal Dental Hero" fetchpriority="high" decoding="async"></div>
+  <div class="hero-card reveal"><img src="assets/hero-dental-orbit.png?v=20260903v22" alt="Majal Dental Hero" fetchpriority="high" decoding="async"></div>
 </div></header>
-<section class="section alt"><div class="container"><div class="stats reveal show" id="statsBlock"><div class="stat"><b class="counter" data-target="4.5" data-decimals="1" data-suffix="/5">0</b><span data-ar="تقييم Google" data-en="Google rating">تقييم Google</span></div><div class="stat"><b class="counter" data-target="13" data-prefix="+">0</b><span data-ar="شركاء تأمين" data-en="Insurance partners">شركاء تأمين</span></div><div class="stat"><b class="counter" data-target="5" data-prefix="+">0</b><span data-ar="خيارات دفع" data-en="Payment methods">خيارات دفع</span></div><div class="stat"><b class="counter" data-target="10" data-prefix="+">0</b><span data-ar="خدمات رئيسية" data-en="Core services">خدمات رئيسية</span></div></div></div></section>
-<section class="section" id="about"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="عن المركز" data-en="ABOUT US">عن المركز</span><h2 data-ar="رعاية أسنان حديثة تبدأ من الثقة" data-en="Modern dental care starts with trust">رعاية أسنان حديثة تبدأ من الثقة</h2><p data-ar="يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية." data-en="Majal Dental Clinics provides a broad range of restorative and cosmetic dental services in a comfortable environment focused on care quality, clear options, and a smooth patient experience.">يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية.</p></div></div><div class="about-grid"><div class="visual reveal"><div class="bg-card"></div><div class="circle"><img src="assets/hero-dental-orbit.png?v=20260903v19" alt="tooth" decoding="async"></div><div class="panel p1"><strong class="typing-target" data-ar="خدمات علاجية وتجميلية" data-en="Restorative & cosmetic services">خدمات علاجية وتجميلية</strong><p class="typing-target" data-ar="فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة." data-en="Exams, fillings, whitening, orthodontics, implants, prosthodontics, and gum treatment." style="color:var(--muted);margin:10px 0 0">فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة.</p></div></div><div class="about-copy reveal"><div class="features"><article class="feature"><div class="icon">🧑‍⚕️</div><h3 data-ar="فريق متخصص" data-en="Specialized team">فريق متخصص</h3><p data-ar="رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان." data-en="Care delivered by specialists across multiple dental disciplines.">رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان.</p></article><article class="feature"><div class="icon">🖥️</div><h3 data-ar="تقنيات حديثة" data-en="Modern technology">تقنيات حديثة</h3><p data-ar="اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة." data-en="Modern tools and techniques that support accurate care and a better experience.">اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة.</p></article><article class="feature"><div class="icon">💳</div><h3 data-ar="تسهيلات في الدفع" data-en="Flexible payment options">تسهيلات في الدفع</h3><p data-ar="قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين." data-en="Multiple payment systems and flexible options to suit patient needs.">قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين.</p></article></div></div></div></div></section>
+<section class="section alt"><div class="container"><div class="stats reveal show" id="statsBlock"><div class="stat"><b class="counter" data-target="4.5" data-decimals="1" data-suffix="/5">0</b><span data-ar="تقييم Google" data-en="Google rating">تقييم Google</span></div><div class="stat"><b class="counter" data-target="2">0</b><span data-ar="شركتا تأمين" data-en="Insurance partners">شركتا تأمين</span></div><div class="stat"><b class="counter" data-target="5" data-prefix="+">0</b><span data-ar="خيارات دفع" data-en="Payment methods">خيارات دفع</span></div><div class="stat"><b class="counter" data-target="10" data-prefix="+">0</b><span data-ar="خدمات رئيسية" data-en="Core services">خدمات رئيسية</span></div></div></div></section>
+<section class="section" id="about"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="عن المركز" data-en="ABOUT US">عن المركز</span><h2 data-ar="رعاية أسنان حديثة تبدأ من الثقة" data-en="Modern dental care starts with trust">رعاية أسنان حديثة تبدأ من الثقة</h2><p data-ar="يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية." data-en="Majal Dental Clinics provides a broad range of restorative and cosmetic dental services in a comfortable environment focused on care quality, clear options, and a smooth patient experience.">يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية.</p></div></div><div class="about-grid"><div class="visual reveal"><div class="bg-card"></div><div class="circle"><img src="assets/hero-dental-orbit.png?v=20260903v22" alt="tooth" decoding="async"></div><div class="panel p1"><strong class="typing-target" data-ar="خدمات علاجية وتجميلية" data-en="Restorative & cosmetic services">خدمات علاجية وتجميلية</strong><p class="typing-target" data-ar="فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة." data-en="Exams, fillings, whitening, orthodontics, implants, prosthodontics, and gum treatment." style="color:var(--muted);margin:10px 0 0">فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة.</p></div></div><div class="about-copy reveal"><div class="features"><article class="feature"><div class="icon">🧑‍⚕️</div><h3 data-ar="فريق متخصص" data-en="Specialized team">فريق متخصص</h3><p data-ar="رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان." data-en="Care delivered by specialists across multiple dental disciplines.">رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان.</p></article><article class="feature"><div class="icon">🖥️</div><h3 data-ar="تقنيات حديثة" data-en="Modern technology">تقنيات حديثة</h3><p data-ar="اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة." data-en="Modern tools and techniques that support accurate care and a better experience.">اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة.</p></article><article class="feature"><div class="icon">💳</div><h3 data-ar="تسهيلات في الدفع" data-en="Flexible payment options">تسهيلات في الدفع</h3><p data-ar="قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين." data-en="Multiple payment systems and flexible options to suit patient needs.">قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين.</p></article></div></div></div></div></section>
 <section class="section alt" id="services"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="خدماتنا" data-en="OUR SERVICES">خدماتنا</span><h2 data-ar="خدمات رئيسية تغطي احتياجات الابتسامة" data-en="Key services for every smile">خدمات رئيسية تغطي احتياجات الابتسامة</h2><p data-ar="هذه قائمة تعريفية بأبرز الخدمات المتاحة في المجمع، ويمكنك اختيار القسم المناسب عند طلب الحجز." data-en="This is an introductory list of core services available at the clinic. You can choose the appropriate department when booking.">هذه قائمة تعريفية بأبرز الخدمات المتاحة في المجمع، ويمكنك اختيار القسم المناسب عند طلب الحجز.</p></div></div><div class="services" id="servicesGrid"></div></div></section>
 <section class="section" id="doctors"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="الأطباء" data-en="DOCTORS">الأطباء</span><h2 data-ar="كفاءات طبية ضمن فريق المجمع" data-en="Medical expertise within the clinic team">كفاءات طبية ضمن فريق المجمع</h2><p data-ar="قسم تعريفي مبدئي، ويمكن لاحقًا إضافة جميع الأطباء بصورهم وتخصصاتهم ومواعيدهم." data-en="This is an initial profile section and can later be expanded with all doctors, photos, specialties, and schedules.">قسم تعريفي مبدئي، ويمكن لاحقًا إضافة جميع الأطباء بصورهم وتخصصاتهم ومواعيدهم.</p></div></div><div class="doctors reveal show"><article class="doctor"><div class="avatar">ف</div><div><div class="role" data-ar="طبيب أسنان" data-en="Dentist">طبيب أسنان</div><h3 data-ar="د. فوزية حسين الفريحي" data-en="Dr. Fawzia Hussein Al-Furaihi">د. فوزية حسين الفريحي</h3></div></article><article class="doctor"><div class="avatar">ع</div><div><div class="role" data-ar="استشاري / طبيب أسنان" data-en="Consultant / Dentist">استشاري / طبيب أسنان</div><h3 data-ar="أ.د. عماد الشويمي" data-en="Prof. Emad Al-Shuwaimi">أ.د. عماد الشويمي</h3></div></article></div></div></section>
 
@@ -282,7 +303,7 @@
 <footer class="footer">
   <div class="container footer-center">
     <a class="footer-brand" href="#home">
-      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v19" alt="Majal Dental Center logo" loading="lazy" decoding="async">
+      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v22" alt="Majal Dental Center logo" loading="lazy" decoding="async">
       <div>
         <div class="footer-title" data-ar="مركز مجال الأسنان" data-en="Majal Dental Center">مركز مجال الأسنان</div>
         <div class="footer-slogan" data-ar="ابتسامتك تستحق مجالاً أكبر للعناية" data-en="Your smile deserves a wider Majal of care">ابتسامتك تستحق مجالاً أكبر للعناية</div>
@@ -334,26 +355,15 @@ const services=[
  {ar:'جراحة الفم والوجه والفكين',en:'Oral & maxillofacial surgery',ico:'✚',dAr:'تقييم وعلاج الحالات الجراحية المتخصصة.',dEn:'Assessment and management of specialized surgical cases.'}
 ];
 const paymentItems=[
- {img:'assets/tabby.png?v=20260903v19',ar:'تابي',en:'Tabby'},
- {img:'assets/tamara.jpg?v=20260903v19',ar:'تمارا',en:'Tamara'},
- {img:'assets/mada.jpg?v=20260903v19',ar:'مدى',en:'Mada'},
- {img:'assets/visa.jpg?v=20260903v19',ar:'فيزا',en:'Visa'},
- {img:'assets/mastercard.webp?v=20260903v19',ar:'ماستركارد',en:'Mastercard'}
+ {img:'assets/tabby.png?v=20260903v22',ar:'تابي',en:'Tabby'},
+ {img:'assets/tamara.jpg?v=20260903v22',ar:'تمارا',en:'Tamara'},
+ {img:'assets/mada.jpg?v=20260903v22',ar:'مدى',en:'Mada'},
+ {img:'assets/visa.jpg?v=20260903v22',ar:'فيزا',en:'Visa'},
+ {img:'assets/mastercard.webp?v=20260903v22',ar:'ماستركارد',en:'Mastercard'}
 ];
 const insuranceItems=[
- {img:'assets/aletihad.jpg?v=20260903v19',ar:'الاتحاد',en:'Alethiad'},
- {img:'assets/alrajhi-takaful.png?v=20260903v19',ar:'تكافل الراجحي',en:'Al Rajhi Takaful'},
- {img:'assets/bupa.png?v=20260903v19',ar:'بوبا',en:'Bupa'},
- {img:'assets/gig.png?v=20260903v19',ar:'GIG',en:'Gulf Insurance Group'},
- {img:'assets/globemed.png?v=20260903v19',ar:'غلوب ميد',en:'GlobeMed'},
- {img:'assets/gulf-union.png?v=20260903v19',ar:'اتحاد الخليج',en:'Gulf Union'},
- {img:'assets/malath.png?v=20260903v19',ar:'ملاذ',en:'Malath'},
- {img:'assets/mednet.jpg?v=20260903v19',ar:'مد نت',en:'MedNet'},
- {img:'assets/nextcare.png?v=20260903v19',ar:'نكست كير',en:'Nextcare'},
- {img:'assets/takaful-al-arabia.jpg?v=20260903v19',ar:'تكافل العربية',en:'Takaful Al Arabia'},
- {img:'assets/tawuniya.png?v=20260903v19',ar:'التعاونية',en:'Tawuniya'},
- {img:'assets/tcs.jpg?v=20260903v19',ar:'TCS',en:'TCS'},
- {img:'assets/walaa.png?v=20260903v19',ar:'ولاء',en:'Walaa'}
+ {img:'assets/bupa.png?v=20260903v22',ar:'بوبا',en:'Bupa'},
+ {img:'assets/tawuniya.png?v=20260903v22',ar:'التعاونية',en:'Tawuniya'}
 ];
 let isEn=false;
 const grid=document.getElementById('servicesGrid'), serviceSel=document.getElementById('service'), langBtn=document.getElementById('langBtn');
@@ -423,19 +433,42 @@ function renderMarquee(el, items){
   const makeCard = item => `<div class="logo-chip"><img src="${item.img}" alt="${isEn?item.en:item.ar}"><span>${isEn?item.en:item.ar}</span></div>`;
   el.innerHTML = items.map(makeCard).join('');
 }
+
+function updateWhatsAppLinks(){
+  const defaultMsg = isEn
+    ? 'Hello Majal Dental Center, I am contacting you through the website.'
+    : 'السلام عليكم مركز مجال الأسنان، أتواصل معكم من خلال الموقع الإلكتروني.';
+  document.querySelectorAll('a[href*="api.whatsapp.com/send"],a[href*="wa.me/"]').forEach(a=>{
+    if(a.dataset.dynamicBooking==='1') return;
+    a.href='https://api.whatsapp.com/send/?phone=966558979922&text='
+      + encodeURIComponent(defaultMsg)
+      + '&type=phone_number&app_absent=0';
+  });
+}
+
 function translate(){
   document.documentElement.lang=isEn?'en':'ar'; document.documentElement.dir=isEn?'ltr':'rtl'; document.body.classList.toggle('en',isEn);
   document.querySelectorAll('[data-ar]').forEach(el=>{el.innerHTML=isEn?el.dataset.en:el.dataset.ar});
   document.querySelectorAll('[data-ph-ar]').forEach(el=>{el.placeholder=isEn?el.dataset.phEn:el.dataset.phAr});
   langBtn.textContent=isEn?'AR':'EN';
-  renderServices(); renderMarquee(document.getElementById('paymentMarquee'), paymentItems); renderMarquee(document.getElementById('insuranceMarquee'), insuranceItems); resetMarquees(); animateCounters(); if(isAboutVisible) runAboutTyping();
+  renderServices(); renderMarquee(document.getElementById('paymentMarquee'), paymentItems); renderMarquee(document.getElementById('insuranceMarquee'), insuranceItems); resetMarquees(); animateCounters(); updateWhatsAppLinks(); if(isAboutVisible) runAboutTyping();
 }
-renderServices(); renderMarquee(document.getElementById('paymentMarquee'), paymentItems); renderMarquee(document.getElementById('insuranceMarquee'), insuranceItems); animateCounters();
+renderServices(); renderMarquee(document.getElementById('paymentMarquee'), paymentItems); renderMarquee(document.getElementById('insuranceMarquee'), insuranceItems); animateCounters(); updateWhatsAppLinks();
 langBtn.onclick=()=>{isEn=!isEn;translate()};
 document.getElementById('hamb').onclick=()=>document.getElementById('menu').classList.toggle('open'); document.querySelectorAll('.menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
 const modal=document.getElementById('bookingModal'); function openBooking(){modal.classList.add('open');modal.setAttribute('aria-hidden','false')} function closeBooking(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')} document.querySelectorAll('[data-book]').forEach(b=>b.onclick=openBooking); document.getElementById('closeModal').onclick=closeBooking; modal.onclick=e=>{if(e.target===modal)closeBooking()};
 const today=new Date(); today.setMinutes(today.getMinutes()-today.getTimezoneOffset()); document.getElementById('date').min=today.toISOString().split('T')[0];
-document.getElementById('bookingForm').onsubmit=e=>{e.preventDefault(); const name=document.getElementById('name').value.trim(), mobile=document.getElementById('mobile').value.trim(), service=document.getElementById('service').value, date=document.getElementById('date').value, time=document.getElementById('time').value, notes=document.getElementById('notes').value.trim(); const msg=isEn?`Hello Majal Dental Clinics,
+document.getElementById('bookingForm').onsubmit=e=>{
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const mobile=document.getElementById('mobile').value.trim();
+  const service=document.getElementById('service').value;
+  const date=document.getElementById('date').value;
+  const time=document.getElementById('time').value;
+  const notes=document.getElementById('notes').value.trim();
+
+  const msg=isEn
+    ? `Hello Majal Dental Center,
 I would like to request an appointment.
 
 Name: ${name}
@@ -443,7 +476,10 @@ Mobile: ${mobile}
 Department / Service: ${service}
 Preferred date: ${date}
 Preferred time: ${time}
-Notes: ${notes||'-'}`:`السلام عليكم مجمع مجال الأسنان،
+Notes: ${notes || '-'}
+
+Sent from majaldental.com`
+    : `السلام عليكم مركز مجال الأسنان،
 أرغب في طلب حجز موعد.
 
 الاسم: ${name}
@@ -451,7 +487,15 @@ Notes: ${notes||'-'}`:`السلام عليكم مجمع مجال الأسنان�
 القسم / الخدمة: ${service}
 التاريخ المفضل: ${date}
 الوقت المفضل: ${time}
-ملاحظات: ${notes||'-'}`; window.open('https://api.whatsapp.com/send/?phone=966558979922&text='+encodeURIComponent(msg)+'&type=phone_number&app_absent=0','_blank');};
+ملاحظات: ${notes || '-'}
+
+تم الإرسال من majaldental.com`;
+
+  const url='https://api.whatsapp.com/send/?phone=966558979922&text='
+    + encodeURIComponent(msg)
+    + '&type=phone_number&app_absent=0';
+  window.open(url,'_blank');
+};
 
 
 let isAboutVisible=false;
@@ -595,7 +639,7 @@ window.addEventListener('load',()=>{
   },800);
 });
 
-const SITE_VERSION='20260903v19';
+const SITE_VERSION='20260903v22';
 
 function setupInfiniteMarquee(wrap, speed){
   const track = wrap.querySelector('.marquee');
