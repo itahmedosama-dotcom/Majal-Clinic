@@ -6,11 +6,11 @@
   <meta name="theme-color" content="#101b47" />
   <meta name="description" content="مركز مجال الأسنان في الخبر – حي العقربية. خدمات زراعة الأسنان، تقويم الأسنان، علاج الجذور والأعصاب، تبييض الأسنان، الحشوات، تنظيف الأسنان، التركيبات وعلاج اللثة مع حجز مباشر عبر واتساب.">
   <title>مركز مجال الأسنان في الخبر | زراعة وتقويم وعلاج الأسنان | Majal Dental</title>
-  <link rel="icon" type="image/png" href="assets/majal-logo.png?v=20260903v30">
-  <link rel="shortcut icon" href="assets/majal-logo.png?v=20260903v30">
-  <link rel="apple-touch-icon" href="assets/majal-logo.png?v=20260903v30">
-  <link rel="preload" as="image" href="assets/hero-dental-orbit.webp?v=20260903v30">
-  <link rel="preload" as="image" href="assets/majal-logo.png?v=20260903v30">
+  <link rel="icon" type="image/png" href="assets/majal-logo.png?v=20260903v32">
+  <link rel="shortcut icon" href="assets/majal-logo.png?v=20260903v32">
+  <link rel="apple-touch-icon" href="assets/majal-logo.png?v=20260903v32">
+  <link rel="preload" as="image" href="assets/hero-dental-orbit.webp?v=20260903v32">
+  <link rel="preload" as="image" href="assets/majal-logo.png?v=20260903v32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -676,7 +676,200 @@
       }
     }
 
-  </style>
+  
+    /* V31: compact mobile booking form inspired by the reference site's request modal */
+    @media(max-width:640px){
+      #bookingModal{
+        padding:10px!important;
+        align-items:center!important;
+        justify-content:center!important;
+      }
+      #bookingModal .modal-card{
+        width:min(390px,calc(100% - 4px))!important;
+        max-height:88svh!important;
+        padding:14px 12px 13px!important;
+        border-radius:20px!important;
+        overflow:auto!important;
+        overscroll-behavior:contain;
+      }
+      #bookingModal .modal-top{
+        align-items:center!important;
+        gap:8px!important;
+        margin-bottom:2px!important;
+      }
+      #bookingModal .modal-top .kicker{
+        font-size:9px!important;
+        line-height:1!important;
+      }
+      #bookingModal .modal-top h2{
+        font-size:18px!important;
+        line-height:1.25!important;
+        margin-top:3px!important;
+      }
+      #bookingModal .close{
+        width:34px!important;
+        height:34px!important;
+        min-width:34px!important;
+        border-radius:10px!important;
+        font-size:18px!important;
+      }
+
+      #bookingModal .form-grid{
+        display:grid!important;
+        grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+        gap:8px!important;
+        margin-top:10px!important;
+      }
+      #bookingModal .field{
+        min-width:0!important;
+      }
+      #bookingModal .field:nth-child(3),
+      #bookingModal .field.full{
+        grid-column:1 / -1!important;
+      }
+      #bookingModal .field label{
+        font-size:10px!important;
+        margin-bottom:3px!important;
+        line-height:1.25!important;
+      }
+      #bookingModal .field input,
+      #bookingModal .field select,
+      #bookingModal .field textarea{
+        width:100%!important;
+        min-width:0!important;
+        height:38px!important;
+        min-height:38px!important;
+        padding:7px 8px!important;
+        border-radius:9px!important;
+        font-size:12px!important;
+        line-height:1.2!important;
+      }
+      #bookingModal .field textarea{
+        height:48px!important;
+        min-height:48px!important;
+        resize:none!important;
+      }
+      #bookingModal .notice{
+        margin-top:8px!important;
+        padding:7px 8px!important;
+        border-radius:9px!important;
+        font-size:9px!important;
+        line-height:1.45!important;
+      }
+      #bookingModal .btn[type="submit"]{
+        min-height:40px!important;
+        margin-top:8px!important;
+        padding:8px 12px!important;
+        border-radius:10px!important;
+        font-size:12px!important;
+      }
+    }
+
+    @media(max-width:360px){
+      #bookingModal{padding:6px!important}
+      #bookingModal .modal-card{
+        width:100%!important;
+        padding:12px 10px!important;
+      }
+      #bookingModal .form-grid{gap:6px!important}
+      #bookingModal .field input,
+      #bookingModal .field select,
+      #bookingModal .field textarea{
+        font-size:11px!important;
+        padding-inline:6px!important;
+      }
+    }
+
+  
+    /* V32: multi-request WhatsApp modal */
+    .request-tabs{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:8px;
+      margin:16px 0 12px;
+    }
+    .request-tab{
+      border:1px solid #e3e8f0;
+      background:#fff;
+      color:var(--navy);
+      border-radius:14px;
+      padding:10px 8px;
+      min-height:58px;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:7px;
+      font:inherit;
+      transition:.2s;
+    }
+    .request-tab span{
+      width:26px;height:26px;border-radius:9px;
+      display:grid;place-items:center;
+      background:#f1f4f8;color:#71829a;
+      font-size:10px;font-weight:900;
+    }
+    .request-tab b{font-size:12px;line-height:1.25}
+    .request-tab.active{
+      background:var(--navy);
+      border-color:var(--navy);
+      color:#fff;
+      box-shadow:0 9px 22px rgba(16,27,71,.16);
+    }
+    .request-tab.active span{background:rgba(255,255,255,.16);color:#fff}
+    .request-panel{display:none}
+    .request-panel.active{display:block}
+    .request-modal-card{max-width:620px}
+    .request-panel .form-grid{margin-top:6px}
+
+    @media(max-width:640px){
+      #bookingModal .request-modal-card{
+        width:min(390px,calc(100% - 4px))!important;
+        max-height:90svh!important;
+        padding:12px 10px!important;
+      }
+      #bookingModal .modal-top h2{
+        font-size:17px!important;
+        max-width:290px;
+      }
+      .request-tabs{
+        gap:5px;
+        margin:10px 0 8px;
+      }
+      .request-tab{
+        min-height:48px;
+        padding:7px 4px;
+        gap:4px;
+        border-radius:10px;
+      }
+      .request-tab span{
+        width:22px;height:22px;border-radius:7px;
+        font-size:9px;
+      }
+      .request-tab b{font-size:9px}
+      #bookingModal .request-panel .form-grid{gap:6px!important;margin-top:5px!important}
+      #bookingModal .request-panel .field label{font-size:9px!important}
+      #bookingModal .request-panel .field input,
+      #bookingModal .request-panel .field select,
+      #bookingModal .request-panel .field textarea{
+        height:36px!important;min-height:36px!important;
+        padding:6px 7px!important;font-size:11px!important;
+      }
+      #bookingModal .request-panel .field textarea{
+        height:46px!important;min-height:46px!important;
+      }
+      #bookingModal .notice{
+        margin-top:7px!important;
+        padding:6px 8px!important;
+        font-size:8.5px!important;
+      }
+      #bookingModal .btn[type="submit"]{
+        min-height:38px!important;
+        margin-top:7px!important;
+      }
+    }
+
+</style>
 
   <link rel="canonical" href="https://majaldental.com/">
   <link rel="sitemap" type="application/xml" href="https://majaldental.com/sitemap.xml">
@@ -689,7 +882,7 @@
   <meta property="og:title" content="مركز مجال الأسنان | Majal Dental Center">
   <meta property="og:description" content="رعاية متخصصة لابتسامة أجمل في الخبر. خدمات علاجية وتجميلية متكاملة وحجز مباشر عبر واتساب.">
   <meta property="og:url" content="https://majaldental.com/">
-  <meta property="og:image" content="https://majaldental.com/assets/hero-dental-orbit.webp?v=20260903v30">
+  <meta property="og:image" content="https://majaldental.com/assets/hero-dental-orbit.webp?v=20260903v32">
   <meta property="og:image:alt" content="شعار مركز مجال الأسنان">
   <meta property="og:locale" content="ar_SA">
   <meta property="og:locale:alternate" content="en_US">
@@ -697,7 +890,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="مركز مجال الأسنان | Majal Dental Center">
   <meta name="twitter:description" content="ابتسامتك تستحق مجالاً أكبر للعناية. خدمات أسنان متكاملة في الخبر.">
-  <meta name="twitter:image" content="https://majaldental.com/assets/hero-dental-orbit.webp?v=20260903v30">
+  <meta name="twitter:image" content="https://majaldental.com/assets/hero-dental-orbit.webp?v=20260903v32">
 
   <script type="application/ld+json">
 {
@@ -711,8 +904,8 @@
   "name": "مركز مجال الأسنان",
   "alternateName": "Majal Dental Center",
   "url": "https://majaldental.com/",
-  "logo": "https://majaldental.com/assets/majal-logo.png?v=20260903v30",
-  "image": "https://majaldental.com/assets/majal-logo.png?v=20260903v30",
+  "logo": "https://majaldental.com/assets/majal-logo.png?v=20260903v32",
+  "image": "https://majaldental.com/assets/majal-logo.png?v=20260903v32",
   "description": "مركز أسنان في الخبر يقدم خدمات علاجية وتجميلية تشمل الفحوصات والحشوات والتبييض والتقويم والزراعة والتركيبات وعلاج اللثة.",
   "telephone": "+966138979922",
   "email": "majaldental@gmail.com",
@@ -910,7 +1103,7 @@
 <nav class="nav">
   <div class="container nav-inner">
     <a class="brand" href="#home">
-      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v30" alt="Majal Dental logo" decoding="async">
+      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v32" alt="Majal Dental logo" decoding="async">
       <div class="brand-copy">
         <strong data-ar="مركز مجال الأسنان" data-en="Majal Dental Center">مركز مجال الأسنان</strong>
         <small class="brand-tag" data-ar="ابتسامتك تستحق مجالاً أكبر للعناية" data-en="Your smile deserves a wider Majal of care">ابتسامتك تستحق مجالاً أكبر للعناية</small>
@@ -927,7 +1120,7 @@
     </div>
     <div class="nav-actions">
       <button class="btn btn-outline lang" id="langBtn">EN</button>
-      <button class="btn btn-primary" data-book data-ar="احجز عبر واتساب" data-en="Book via WhatsApp">احجز عبر واتساب</button>
+      <button class="btn btn-primary" data-request-open data-ar="اطلب الآن" data-en="Request now">اطلب الآن</button>
       <button class="hamb" id="hamb">☰</button>
     </div>
   </div>
@@ -940,7 +1133,7 @@
     <div class="trust-row"><span data-ar="تقنيات حديثة" data-en="Modern technology">تقنيات حديثة</span><span data-ar="فريق متخصص" data-en="Specialist team">فريق متخصص</span><span data-ar="خيارات دفع مرنة" data-en="Flexible payments">خيارات دفع مرنة</span></div>
     <div class="hero-actions"><button class="btn btn-primary" data-book data-ar="احجز موعدك الآن" data-en="Book an appointment">احجز موعدك الآن</button></div>
   </div>
-  <div class="hero-card reveal"><img src="assets/hero-dental-orbit.webp?v=20260903v30" alt="Majal Dental Hero" fetchpriority="high" decoding="async"></div>
+  <div class="hero-card reveal"><img src="assets/hero-dental-orbit.webp?v=20260903v32" alt="Majal Dental Hero" fetchpriority="high" decoding="async"></div>
 </div></header>
 
 
@@ -982,7 +1175,7 @@
 </section>
 
 
-<section class="section" id="about"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="عن المركز" data-en="ABOUT US">عن المركز</span><h2 data-ar="رعاية أسنان حديثة تبدأ من الثقة" data-en="Modern dental care starts with trust">رعاية أسنان حديثة تبدأ من الثقة</h2><p data-ar="يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية." data-en="Majal Dental Clinics provides a broad range of restorative and cosmetic dental services in a comfortable environment focused on care quality, clear options, and a smooth patient experience.">يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية.</p></div></div><div class="about-grid"><div class="visual reveal"><div class="bg-card"></div><div class="circle"><img src="assets/hero-dental-orbit.webp?v=20260903v30" alt="tooth" loading="lazy" decoding="async"></div><div class="panel p1"><strong class="typing-target" data-ar="خدمات علاجية وتجميلية" data-en="Restorative & cosmetic services">خدمات علاجية وتجميلية</strong><p class="typing-target" data-ar="فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة." data-en="Exams, fillings, whitening, orthodontics, implants, prosthodontics, and gum treatment." style="color:var(--muted);margin:10px 0 0">فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة.</p></div></div><div class="about-copy reveal"><div class="features"><article class="feature"><div class="icon">🧑‍⚕️</div><h3 data-ar="فريق متخصص" data-en="Specialized team">فريق متخصص</h3><p data-ar="رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان." data-en="Care delivered by specialists across multiple dental disciplines.">رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان.</p></article><article class="feature"><div class="icon">🖥️</div><h3 data-ar="تقنيات حديثة" data-en="Modern technology">تقنيات حديثة</h3><p data-ar="اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة." data-en="Modern tools and techniques that support accurate care and a better experience.">اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة.</p></article><article class="feature"><div class="icon">💳</div><h3 data-ar="تسهيلات في الدفع" data-en="Flexible payment options">تسهيلات في الدفع</h3><p data-ar="قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين." data-en="Multiple payment systems and flexible options to suit patient needs.">قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين.</p></article></div></div></div></div></section>
+<section class="section" id="about"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="عن المركز" data-en="ABOUT US">عن المركز</span><h2 data-ar="رعاية أسنان حديثة تبدأ من الثقة" data-en="Modern dental care starts with trust">رعاية أسنان حديثة تبدأ من الثقة</h2><p data-ar="يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية." data-en="Majal Dental Clinics provides a broad range of restorative and cosmetic dental services in a comfortable environment focused on care quality, clear options, and a smooth patient experience.">يقدّم مجمع مجال الأسنان الطبي خدمات علاجية وتجميلية متنوعة في بيئة مريحة تركّز على جودة الرعاية ووضوح الخيارات وتجربة المراجع من أول تواصل حتى إتمام الخطة العلاجية.</p></div></div><div class="about-grid"><div class="visual reveal"><div class="bg-card"></div><div class="circle"><img src="assets/hero-dental-orbit.webp?v=20260903v32" alt="tooth" loading="lazy" decoding="async"></div><div class="panel p1"><strong class="typing-target" data-ar="خدمات علاجية وتجميلية" data-en="Restorative & cosmetic services">خدمات علاجية وتجميلية</strong><p class="typing-target" data-ar="فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة." data-en="Exams, fillings, whitening, orthodontics, implants, prosthodontics, and gum treatment." style="color:var(--muted);margin:10px 0 0">فحوصات، حشوات، تبييض، تقويم، زراعة، تركيبات وعلاج لثة.</p></div></div><div class="about-copy reveal"><div class="features"><article class="feature"><div class="icon">🧑‍⚕️</div><h3 data-ar="فريق متخصص" data-en="Specialized team">فريق متخصص</h3><p data-ar="رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان." data-en="Care delivered by specialists across multiple dental disciplines.">رعاية يقدمها مختصون في مجالات متعددة من طب الأسنان.</p></article><article class="feature"><div class="icon">🖥️</div><h3 data-ar="تقنيات حديثة" data-en="Modern technology">تقنيات حديثة</h3><p data-ar="اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة." data-en="Modern tools and techniques that support accurate care and a better experience.">اعتماد على حلول وتقنيات حديثة تساعد في دقة التشخيص وتحسين التجربة.</p></article><article class="feature"><div class="icon">💳</div><h3 data-ar="تسهيلات في الدفع" data-en="Flexible payment options">تسهيلات في الدفع</h3><p data-ar="قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين." data-en="Multiple payment systems and flexible options to suit patient needs.">قبول أنظمة دفع متعددة وخيارات ميسرة تناسب احتياجات المراجعين.</p></article></div></div></div></div></section>
 <section class="section alt" id="services"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="خدماتنا" data-en="OUR SERVICES">خدماتنا</span><h2 data-ar="خدمات رئيسية تغطي احتياجات الابتسامة" data-en="Key services for every smile">خدمات رئيسية تغطي احتياجات الابتسامة</h2><p data-ar="هذه قائمة تعريفية بأبرز الخدمات المتاحة في المجمع، ويمكنك اختيار القسم المناسب عند طلب الحجز." data-en="This is an introductory list of core services available at the clinic. You can choose the appropriate department when booking.">هذه قائمة تعريفية بأبرز الخدمات المتاحة في المجمع، ويمكنك اختيار القسم المناسب عند طلب الحجز.</p></div></div>
 <div class="services-marquee-wrap marquee-wrap reveal" id="servicesMarqueeWrap" aria-label="خدمات مركز مجال الأسنان" data-ar-label="خدمات مركز مجال الأسنان" data-en-label="Majal Dental services">
   <div class="services marquee services-track" id="servicesGrid"></div>
@@ -991,11 +1184,11 @@
 <section class="section" id="doctors"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="الأطباء" data-en="DOCTORS">الأطباء</span><h2 data-ar="كفاءات طبية ضمن فريق المجمع" data-en="Medical expertise within the clinic team">كفاءات طبية ضمن فريق المجمع</h2></div></div><div class="doctors reveal show"><article class="doctor"><div class="avatar">ف</div><div><div class="role" data-ar="طبيب أسنان" data-en="Dentist">طبيب أسنان</div><h3 data-ar="د. فوزية حسين الفريحي" data-en="Dr. Fawzia Hussein Al-Furaihi">د. فوزية حسين الفريحي</h3></div></article><article class="doctor"><div class="avatar">ع</div><div><div class="role" data-ar="استشاري / طبيب أسنان" data-en="Consultant / Dentist">استشاري / طبيب أسنان</div><h3 data-ar="أ.د. عماد الشويمي" data-en="Prof. Emad Al-Shuwaimi">أ.د. عماد الشويمي</h3></div></article></div></div></section>
 <section class="section alt" id="insurance"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="شركاء التأمين" data-en="INSURANCE PARTNERS">شركاء التأمين</span><h2 data-ar="شبكة من شركات التأمين" data-en="A network of insurance partners">شبكة من شركات التأمين</h2></div></div><div class="insurance-fixed reveal"><div id="insuranceMarquee"></div></div></div></section>
 <section class="section" id="payments"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="أنظمة الدفع" data-en="PAYMENT METHODS">أنظمة الدفع</span><h2 data-ar="خيارات دفع متاحة" data-en="Available payment methods">خيارات دفع متاحة</h2></div></div><div class="marquee-wrap reveal"><div class="marquee" id="paymentMarquee"></div></div></div></section>
-<section class="section" id="contact"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="تواصل معنا" data-en="CONTACT">تواصل معنا</span><h2 data-ar="نحن أقرب مما تتخيل" data-en="We're closer than you think">نحن أقرب مما تتخيل</h2><p data-ar="الخبر – حي العقربية. يمكنك الوصول إلينا عبر الهاتف أو واتساب أو البريد الإلكتروني، كما يمكن الضغط على الخريطة لفتح Google Maps مباشرة." data-en="Al Khobar – Al Aqrabiyah. You can reach us by phone, WhatsApp, or email, and click the map to open Google Maps directly.">الخبر – حي العقربية. يمكنك الوصول إلينا عبر الهاتف أو واتساب أو البريد الإلكتروني، كما يمكن الضغط على الخريطة لفتح Google Maps مباشرة.</p></div></div><div class="contact-grid"><div class="contact-card reveal"><div class="contact-row"><div class="icon">☎</div><div><strong data-ar="الهاتف" data-en="Phone">الهاتف</strong><a href="tel:+966138979922"><span class="ltr">013 897 9922</span></a></div></div><div class="contact-row"><div class="icon">◉</div><div><strong data-ar="واتساب للحجز" data-en="Booking WhatsApp">واتساب للحجز</strong><a href="https://api.whatsapp.com/send/?phone=966558979922&text=%D8%A7%D8%AA%D9%88%D8%A7%D8%B5%D9%84+%D9%85%D9%86+%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%89&type=phone_number&app_absent=0" target="_blank"><span class="ltr">055 897 9922</span></a></div></div><div class="contact-row"><div class="icon">✉</div><div><strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong><a href="mailto:majaldental@gmail.com"><span class="ltr">majaldental@gmail.com</span></a></div></div><div class="contact-row"><div class="icon">⌖</div><div><strong data-ar="العنوان" data-en="Address">العنوان</strong><a href="https://maps.app.goo.gl/9vXXSySveTaX8yXm7" target="_blank" data-ar="شارع 1، حي العقربية، الخبر 34446" data-en="1 St, Al Aqrabiyah, Al Khobar 34446">شارع 1، حي العقربية، الخبر 34446</a></div></div><div class="contact-row"><div class="icon">◎</div><div><strong>Instagram</strong><a href="https://www.instagram.com/majaldental" target="_blank"><span class="ltr">@majaldental</span></a></div></div><button class="btn btn-primary" data-book style="width:100%;margin-top:10px" data-ar="إرسال طلب حجز" data-en="Send booking request">إرسال طلب حجز</button></div><a class="map-link reveal" href="https://maps.app.goo.gl/9vXXSySveTaX8yXm7" target="_blank" aria-label="Open Google Maps"><iframe class="map" style="height:100%" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=26.2852817,50.1963079&z=16&output=embed" title="Majal Dental Clinics Map"></iframe></a></div></div></section>
+<section class="section" id="contact"><div class="container"><div class="section-head reveal"><div class="copy"><span class="kicker" data-ar="تواصل معنا" data-en="CONTACT">تواصل معنا</span><h2 data-ar="نحن أقرب مما تتخيل" data-en="We're closer than you think">نحن أقرب مما تتخيل</h2><p data-ar="الخبر – حي العقربية. يمكنك الوصول إلينا عبر الهاتف أو واتساب أو البريد الإلكتروني، كما يمكن الضغط على الخريطة لفتح Google Maps مباشرة." data-en="Al Khobar – Al Aqrabiyah. You can reach us by phone, WhatsApp, or email, and click the map to open Google Maps directly.">الخبر – حي العقربية. يمكنك الوصول إلينا عبر الهاتف أو واتساب أو البريد الإلكتروني، كما يمكن الضغط على الخريطة لفتح Google Maps مباشرة.</p></div></div><div class="contact-grid"><div class="contact-card reveal"><div class="contact-row"><div class="icon">☎</div><div><strong data-ar="الهاتف" data-en="Phone">الهاتف</strong><a href="tel:+966138979922"><span class="ltr">013 897 9922</span></a></div></div><div class="contact-row"><div class="icon">◉</div><div><strong data-ar="واتساب للحجز" data-en="Booking WhatsApp">واتساب للحجز</strong><a href="https://api.whatsapp.com/send/?phone=966558979922&text=%D8%A7%D8%AA%D9%88%D8%A7%D8%B5%D9%84+%D9%85%D9%86+%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%89&type=phone_number&app_absent=0" target="_blank"><span class="ltr">055 897 9922</span></a></div></div><div class="contact-row"><div class="icon">✉</div><div><strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong><a href="mailto:majaldental@gmail.com"><span class="ltr">majaldental@gmail.com</span></a></div></div><div class="contact-row"><div class="icon">⌖</div><div><strong data-ar="العنوان" data-en="Address">العنوان</strong><a href="https://maps.app.goo.gl/9vXXSySveTaX8yXm7" target="_blank" data-ar="شارع 1، حي العقربية، الخبر 34446" data-en="1 St, Al Aqrabiyah, Al Khobar 34446">شارع 1، حي العقربية، الخبر 34446</a></div></div><div class="contact-row"><div class="icon">◎</div><div><strong>Instagram</strong><a href="https://www.instagram.com/majaldental" target="_blank"><span class="ltr">@majaldental</span></a></div></div><button class="btn btn-primary" data-request-open style="width:100%;margin-top:10px" data-ar="اطلب الآن" data-en="Request now">اطلب الآن</button></div><a class="map-link reveal" href="https://maps.app.goo.gl/9vXXSySveTaX8yXm7" target="_blank" aria-label="Open Google Maps"><iframe class="map" style="height:100%" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=26.2852817,50.1963079&z=16&output=embed" title="Majal Dental Clinics Map"></iframe></a></div></div></section>
 <footer class="footer">
   <div class="container footer-center">
     <a class="footer-brand" href="#home">
-      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v30" alt="Majal Dental Center logo" loading="lazy" decoding="async">
+      <img class="brand-logo" src="assets/majal-logo.png?v=20260903v32" alt="Majal Dental Center logo" loading="lazy" decoding="async">
       <div>
         <div class="footer-title" data-ar="مركز مجال الأسنان" data-en="Majal Dental Center">مركز مجال الأسنان</div>
         <div class="footer-slogan" data-ar="ابتسامتك تستحق مجالاً أكبر للعناية" data-en="Your smile deserves a wider Majal of care">ابتسامتك تستحق مجالاً أكبر للعناية</div>
@@ -1032,7 +1225,77 @@
 
 <button class="back-top" id="backTop" aria-label="العودة لأعلى الصفحة" title="العودة لأعلى الصفحة">↑</button>
 
-<div class="modal" id="bookingModal" aria-hidden="true"><div class="modal-card"><div class="modal-top"><div><span class="kicker" data-ar="حجز موعد" data-en="BOOK APPOINTMENT">حجز موعد</span><h2 style="margin:4px 0 0;font-size:28px" data-ar="أرسل طلبك عبر واتساب" data-en="Send your request via WhatsApp">أرسل طلبك عبر واتساب</h2></div><button class="close" id="closeModal">×</button></div><form id="bookingForm"><div class="form-grid"><div class="field"><label data-ar="الاسم" data-en="Name">الاسم</label><input id="name" required data-ph-ar="اكتب الاسم" data-ph-en="Your name" placeholder="اكتب الاسم"></div><div class="field"><label data-ar="رقم الجوال" data-en="Mobile">رقم الجوال</label><input id="mobile" inputmode="tel" required placeholder="05xxxxxxxx"></div><div class="field"><label data-ar="الخدمة" data-en="Department / service">الخدمة</label><select id="service" required></select></div><div class="field"><label data-ar="التاريخ المفضل" data-en="Preferred date">التاريخ المفضل</label><input id="date" type="date" required></div><div class="field"><label data-ar="الوقت المفضل" data-en="Preferred time">الوقت المفضل</label><input id="time" type="time" required min="11:00" max="22:00"></div><div class="field full"><label data-ar="ملاحظات" data-en="Notes">ملاحظات</label><textarea id="notes" data-ph-ar="أي تفاصيل تساعد فريق الحجز" data-ph-en="Any details that may help the booking team" placeholder="أي تفاصيل تساعد فريق الحجز"></textarea></div></div><div class="notice" data-ar="إرسال الطلب لا يعني تأكيد الموعد. سيتم فتح واتساب برسالة جاهزة لمراجعتها وإرسالها إلى فريق المركز." data-en="Submitting this form does not confirm the appointment. WhatsApp will open with a prepared message for you to review and send to the clinic team.">إرسال الطلب لا يعني تأكيد الموعد. سيتم فتح واتساب برسالة جاهزة لمراجعتها وإرسالها إلى فريق المركز.</div><button class="btn btn-primary" type="submit" style="width:100%;margin-top:16px" data-ar="متابعة إلى واتساب" data-en="Continue to WhatsApp">متابعة إلى واتساب</button></form></div></div>
+
+<div class="modal" id="bookingModal" aria-hidden="true">
+  <div class="modal-card request-modal-card">
+    <div class="modal-top">
+      <div>
+        <span class="kicker" data-ar="خدمة أسرع عبر واتساب" data-en="FASTER SERVICE VIA WHATSAPP">خدمة أسرع عبر واتساب</span>
+        <h2 style="margin:4px 0 0;font-size:28px" data-ar="اختر طلبك، واترك الباقي علينا" data-en="Choose your request and leave the rest to us">اختر طلبك، واترك الباقي علينا</h2>
+      </div>
+      <button class="close" id="closeModal" type="button" aria-label="Close">×</button>
+    </div>
+
+    <div class="request-tabs" role="tablist" aria-label="Request type">
+      <button type="button" class="request-tab active" data-request-type="booking">
+        <span>01</span><b data-ar="حجز موعد" data-en="Book appointment">حجز موعد</b>
+      </button>
+      <button type="button" class="request-tab" data-request-type="contract">
+        <span>02</span><b data-ar="طلب تعاقد" data-en="Partnership request">طلب تعاقد</b>
+      </button>
+      <button type="button" class="request-tab" data-request-type="feedback">
+        <span>03</span><b data-ar="شكوى أو اقتراح" data-en="Complaint or suggestion">شكوى أو اقتراح</b>
+      </button>
+    </div>
+
+    <form id="bookingForm">
+      <input type="hidden" id="requestType" value="booking">
+
+      <div class="request-panel active" data-panel="booking">
+        <div class="form-grid">
+          <div class="field"><label data-ar="الاسم" data-en="Name">الاسم</label><input id="name" required data-ph-ar="اكتب الاسم" data-ph-en="Your name" placeholder="اكتب الاسم"></div>
+          <div class="field"><label data-ar="رقم الجوال" data-en="Mobile">رقم الجوال</label><input id="mobile" inputmode="tel" required placeholder="05xxxxxxxx"></div>
+          <div class="field full"><label data-ar="القسم أو الخدمة" data-en="Department / service">القسم أو الخدمة</label><select id="service" required></select></div>
+          <div class="field"><label data-ar="التاريخ المفضل" data-en="Preferred date">التاريخ المفضل</label><input id="date" type="date" required></div>
+          <div class="field"><label data-ar="الوقت المفضل" data-en="Preferred time">الوقت المفضل</label><input id="time" type="time" required min="11:00" max="22:00"></div>
+          <div class="field full"><label data-ar="تفاصيل إضافية" data-en="Additional details">تفاصيل إضافية</label><textarea id="notes" data-ph-ar="أي تفاصيل تساعد فريق الحجز" data-ph-en="Any details that may help the booking team" placeholder="أي تفاصيل تساعد فريق الحجز"></textarea></div>
+        </div>
+      </div>
+
+      <div class="request-panel" data-panel="contract">
+        <div class="form-grid">
+          <div class="field"><label data-ar="اسم المنشأة" data-en="Organization name">اسم المنشأة</label><input id="companyName" data-ph-ar="اسم الشركة أو المنشأة" data-ph-en="Company or organization" placeholder="اسم الشركة أو المنشأة"></div>
+          <div class="field"><label data-ar="اسم مسؤول التواصل" data-en="Contact person">اسم مسؤول التواصل</label><input id="contractName" data-ph-ar="الاسم" data-ph-en="Name" placeholder="الاسم"></div>
+          <div class="field"><label data-ar="رقم الجوال" data-en="Mobile">رقم الجوال</label><input id="contractMobile" inputmode="tel" placeholder="05xxxxxxxx"></div>
+          <div class="field"><label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label><input id="contractEmail" type="email" data-ph-ar="اختياري" data-ph-en="Optional" placeholder="اختياري"></div>
+          <div class="field full"><label data-ar="تفاصيل طلب التعاقد" data-en="Partnership details">تفاصيل طلب التعاقد</label><textarea id="contractDetails" data-ph-ar="اكتب نبذة عن جهة التعاقد والخدمة المطلوبة" data-ph-en="Tell us about your organization and the requested cooperation" placeholder="اكتب نبذة عن جهة التعاقد والخدمة المطلوبة"></textarea></div>
+        </div>
+      </div>
+
+      <div class="request-panel" data-panel="feedback">
+        <div class="form-grid">
+          <div class="field"><label data-ar="الاسم" data-en="Name">الاسم</label><input id="feedbackName" data-ph-ar="اكتب الاسم" data-ph-en="Your name" placeholder="اكتب الاسم"></div>
+          <div class="field"><label data-ar="رقم الجوال" data-en="Mobile">رقم الجوال</label><input id="feedbackMobile" inputmode="tel" placeholder="05xxxxxxxx"></div>
+          <div class="field full"><label data-ar="نوع الطلب" data-en="Request type">نوع الطلب</label>
+            <select id="feedbackKind">
+              <option value="complaint" data-ar="شكوى" data-en="Complaint">شكوى</option>
+              <option value="suggestion" data-ar="اقتراح" data-en="Suggestion">اقتراح</option>
+            </select>
+          </div>
+          <div class="field full"><label data-ar="التفاصيل" data-en="Details">التفاصيل</label><textarea id="feedbackDetails" data-ph-ar="اكتب تفاصيل الشكوى أو الاقتراح" data-ph-en="Write the complaint or suggestion details" placeholder="اكتب تفاصيل الشكوى أو الاقتراح"></textarea></div>
+        </div>
+      </div>
+
+      <div class="notice" id="requestNotice"
+        data-ar="سيتم فتح واتساب برسالة جاهزة لمراجعتها قبل الإرسال إلى فريق المركز."
+        data-en="WhatsApp will open with a prepared message for you to review before sending it to the clinic team.">
+        سيتم فتح واتساب برسالة جاهزة لمراجعتها قبل الإرسال إلى فريق المركز.
+      </div>
+      <button class="btn btn-primary" type="submit" style="width:100%;margin-top:12px"
+        data-ar="إرسال الطلب عبر واتساب ↗" data-en="Send request via WhatsApp ↗">إرسال الطلب عبر واتساب ↗</button>
+    </form>
+  </div>
+</div>
 <script>
 const services=[
  {ar:'فحص الأسنان الدوري',en:'Routine dental exam',ico:'🩺',dAr:'فحص شامل للأسنان واللثة للكشف المبكر عن المشاكل.',dEn:'Comprehensive examination of teeth and gums.'},
@@ -1047,15 +1310,15 @@ const services=[
  {ar:'جراحة الفم والوجه والفكين',en:'Oral & maxillofacial surgery',ico:'✚',dAr:'تقييم وعلاج الحالات الجراحية المتخصصة.',dEn:'Assessment and management of specialized surgical cases.'}
 ];
 const paymentItems=[
- {img:'assets/tabby.png?v=20260903v30',ar:'تابي',en:'Tabby'},
- {img:'assets/tamara.webp?v=20260903v30',ar:'تمارا',en:'Tamara'},
- {img:'assets/mada.webp?v=20260903v30',ar:'مدى',en:'Mada'},
- {img:'assets/visa.jpg?v=20260903v30',ar:'فيزا',en:'Visa'},
- {img:'assets/mastercard.webp?v=20260903v30',ar:'ماستركارد',en:'Mastercard'}
+ {img:'assets/tabby.png?v=20260903v32',ar:'تابي',en:'Tabby'},
+ {img:'assets/tamara.webp?v=20260903v32',ar:'تمارا',en:'Tamara'},
+ {img:'assets/mada.webp?v=20260903v32',ar:'مدى',en:'Mada'},
+ {img:'assets/visa.jpg?v=20260903v32',ar:'فيزا',en:'Visa'},
+ {img:'assets/mastercard.webp?v=20260903v32',ar:'ماستركارد',en:'Mastercard'}
 ];
 const insuranceItems=[
- {img:'assets/bupa.webp?v=20260903v30',ar:'بوبا',en:'Bupa'},
- {img:'assets/tawuniya.webp?v=20260903v30',ar:'التعاونية',en:'Tawuniya'}
+ {img:'assets/bupa.webp?v=20260903v32',ar:'بوبا',en:'Bupa'},
+ {img:'assets/tawuniya.webp?v=20260903v32',ar:'التعاونية',en:'Tawuniya'}
 ];
 let isEn=false;
 const grid=document.getElementById('servicesGrid'), serviceSel=document.getElementById('service'), langBtn=document.getElementById('langBtn');
@@ -1156,6 +1419,7 @@ function renderInsuranceStatic(){
 function translate(){
   document.documentElement.lang=isEn?'en':'ar'; document.documentElement.dir=isEn?'ltr':'rtl'; document.body.classList.toggle('en',isEn);
   document.querySelectorAll('[data-ar]').forEach(el=>{el.innerHTML=isEn?el.dataset.en:el.dataset.ar});
+  document.querySelectorAll('option[data-ar]').forEach(opt=>{opt.textContent=isEn?opt.dataset.en:opt.dataset.ar});
   document.querySelectorAll('[data-ph-ar]').forEach(el=>{el.placeholder=isEn?el.dataset.phEn:el.dataset.phAr});
   langBtn.textContent=isEn?'AR':'EN';
   renderServices(); renderMarquee(document.getElementById('paymentMarquee'), paymentItems); renderInsuranceStatic(); resetMarquees(); animateCounters(); updateWhatsAppLinks(); if(isAboutVisible) runAboutTyping();
@@ -1163,7 +1427,40 @@ function translate(){
 renderServices(); renderMarquee(document.getElementById('paymentMarquee'), paymentItems); renderInsuranceStatic(); animateCounters(); updateWhatsAppLinks();
 langBtn.onclick=()=>{isEn=!isEn;translate()};
 document.getElementById('hamb').onclick=()=>document.getElementById('menu').classList.toggle('open'); document.querySelectorAll('.menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
-const modal=document.getElementById('bookingModal'); function openBooking(){updateBookingLimits(true);modal.classList.add('open');modal.setAttribute('aria-hidden','false')} function closeBooking(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')} document.querySelectorAll('[data-book]').forEach(b=>b.onclick=openBooking); document.getElementById('closeModal').onclick=closeBooking; modal.onclick=e=>{if(e.target===modal)closeBooking()};
+
+const modal=document.getElementById('bookingModal');
+const requestTypeInput=document.getElementById('requestType');
+
+function setRequestType(type){
+  requestTypeInput.value=type;
+  document.querySelectorAll('.request-tab').forEach(tab=>{
+    tab.classList.toggle('active',tab.dataset.requestType===type);
+  });
+  document.querySelectorAll('.request-panel').forEach(panel=>{
+    panel.classList.toggle('active',panel.dataset.panel===type);
+  });
+  if(type==='booking') updateBookingLimits(true);
+}
+
+function openBooking(){
+  setRequestType('booking');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden','false');
+}
+function openRequest(type='booking'){
+  setRequestType(type);
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden','false');
+}
+function closeBooking(){
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden','true');
+}
+document.querySelectorAll('[data-book]').forEach(b=>b.onclick=openBooking);
+document.querySelectorAll('[data-request-open]').forEach(b=>b.onclick=()=>openRequest('booking'));
+document.querySelectorAll('.request-tab').forEach(tab=>tab.onclick=()=>setRequestType(tab.dataset.requestType));
+document.getElementById('closeModal').onclick=closeBooking;
+modal.onclick=e=>{if(e.target===modal)closeBooking()};
 
 const dateInput=document.getElementById('date');
 const timeInput=document.getElementById('time');
@@ -1221,34 +1518,41 @@ function updateBookingLimits(setSuggestedTime=false){
 }
 dateInput.addEventListener('change',()=>updateBookingLimits(true));
 
+
 document.getElementById('bookingForm').onsubmit=e=>{
   e.preventDefault();
-  const name=document.getElementById('name').value.trim();
-  const mobile=document.getElementById('mobile').value.trim();
-  const service=document.getElementById('service').value;
-  const date=document.getElementById('date').value;
-  const time=document.getElementById('time').value;
-  const notes=document.getElementById('notes').value.trim();
+  const type=requestTypeInput.value;
+  let msg='';
 
-  updateBookingLimits(false);
-  const minDate=dateInput.min;
-  const minTime=timeInput.min;
-  if(!date || date<minDate){
-    alert(isEn?'Please choose today or a future date.':'يرجى اختيار تاريخ اليوم أو تاريخ لاحق.');
-    dateInput.focus();
-    return;
-  }
-  if(time<minTime || time>timeInput.max){
-    alert(isEn
-      ? `Please choose an available time from ${minTime} to ${timeInput.max}.`
-      : `يرجى اختيار وقت متاح من ${minTime} إلى ${timeInput.max}.`);
-    timeInput.focus();
-    return;
-  }
+  if(type==='booking'){
+    const name=document.getElementById('name').value.trim();
+    const mobile=document.getElementById('mobile').value.trim();
+    const service=document.getElementById('service').value;
+    const date=document.getElementById('date').value;
+    const time=document.getElementById('time').value;
+    const notes=document.getElementById('notes').value.trim();
 
+    if(!name || !mobile || !service || !date || !time){
+      alert(isEn?'Please complete all required booking fields.':'يرجى إكمال جميع بيانات الحجز المطلوبة.');
+      return;
+    }
 
-  const msg=isEn
-    ? `Hello Majal Dental Center,
+    updateBookingLimits(false);
+    const minDate=dateInput.min;
+    const minTime=timeInput.min;
+    if(!date || date<minDate){
+      alert(isEn?'Please choose today or a future date.':'يرجى اختيار تاريخ اليوم أو تاريخ لاحق.');
+      dateInput.focus(); return;
+    }
+    if(time<minTime || time>timeInput.max){
+      alert(isEn
+        ? `Please choose an available time from ${minTime} to ${timeInput.max}.`
+        : `يرجى اختيار وقت متاح من ${minTime} إلى ${timeInput.max}.`);
+      timeInput.focus(); return;
+    }
+
+    msg=isEn
+      ? `Hello Majal Dental Center,
 I would like to request an appointment.
 
 Name: ${name}
@@ -1256,10 +1560,10 @@ Mobile: ${mobile}
 Department / Service: ${service}
 Preferred date: ${date}
 Preferred time: ${time}
-Notes: ${notes || '-'}
+Additional details: ${notes || '-'}
 
 Sent from majaldental.com`
-    : `السلام عليكم مركز مجال الأسنان،
+      : `السلام عليكم مركز مجال الأسنان،
 أرغب في طلب حجز موعد.
 
 الاسم: ${name}
@@ -1267,9 +1571,86 @@ Sent from majaldental.com`
 القسم / الخدمة: ${service}
 التاريخ المفضل: ${date}
 الوقت المفضل: ${time}
-ملاحظات: ${notes || '-'}
+تفاصيل إضافية: ${notes || '-'}
 
 تم الإرسال من majaldental.com`;
+
+    metaTrack('Lead',{content_name:'appointment_request',content_category:'dental_booking'});
+    metaTrack('AppointmentRequest',{service:service,has_notes:Boolean(notes)},true);
+
+  }else if(type==='contract'){
+    const company=document.getElementById('companyName').value.trim();
+    const person=document.getElementById('contractName').value.trim();
+    const mobile=document.getElementById('contractMobile').value.trim();
+    const email=document.getElementById('contractEmail').value.trim();
+    const details=document.getElementById('contractDetails').value.trim();
+
+    if(!company || !person || !mobile || !details){
+      alert(isEn?'Please complete the required partnership request fields.':'يرجى إكمال بيانات طلب التعاقد المطلوبة.');
+      return;
+    }
+
+    msg=isEn
+      ? `Hello Majal Dental Center,
+I would like to submit a partnership request.
+
+Organization: ${company}
+Contact person: ${person}
+Mobile: ${mobile}
+Email: ${email || '-'}
+Partnership details: ${details}
+
+Sent from majaldental.com`
+      : `السلام عليكم مركز مجال الأسنان،
+أرغب في تقديم طلب تعاقد.
+
+اسم المنشأة: ${company}
+مسؤول التواصل: ${person}
+رقم الجوال: ${mobile}
+البريد الإلكتروني: ${email || '-'}
+تفاصيل طلب التعاقد: ${details}
+
+تم الإرسال من majaldental.com`;
+
+    metaTrack('Lead',{content_name:'partnership_request',content_category:'corporate'});
+    metaTrack('PartnershipRequest',{},true);
+
+  }else{
+    const name=document.getElementById('feedbackName').value.trim();
+    const mobile=document.getElementById('feedbackMobile').value.trim();
+    const kind=document.getElementById('feedbackKind').value;
+    const details=document.getElementById('feedbackDetails').value.trim();
+
+    if(!name || !mobile || !details){
+      alert(isEn?'Please complete the required complaint/suggestion fields.':'يرجى إكمال بيانات الشكوى أو الاقتراح المطلوبة.');
+      return;
+    }
+
+    const kindAr=kind==='complaint'?'شكوى':'اقتراح';
+    const kindEn=kind==='complaint'?'Complaint':'Suggestion';
+
+    msg=isEn
+      ? `Hello Majal Dental Center,
+I would like to submit a ${kindEn.toLowerCase()}.
+
+Name: ${name}
+Mobile: ${mobile}
+Type: ${kindEn}
+Details: ${details}
+
+Sent from majaldental.com`
+      : `السلام عليكم مركز مجال الأسنان،
+أرغب في تقديم ${kindAr}.
+
+الاسم: ${name}
+رقم الجوال: ${mobile}
+نوع الطلب: ${kindAr}
+التفاصيل: ${details}
+
+تم الإرسال من majaldental.com`;
+
+    metaTrack('Feedback',{feedback_type:kind},true);
+  }
 
   const url='https://api.whatsapp.com/send/?phone=966558979922&text='
     + encodeURIComponent(msg)
@@ -1338,6 +1719,7 @@ document.addEventListener('click',e=>{
   if(el.id==='langBtn'){
     metaTrack('LanguageChange',{selected_language:isEn?'en':'ar'},true);
   }
+  if(el.matches('[data-request-open]')){metaTrack('RequestOpen',{source:label||'request_button'},true);}
   if(el.matches('[data-book]')){
     metaTrack('BookingOpen',{source:label||'booking_button'},true);
   }
@@ -1419,7 +1801,7 @@ window.addEventListener('load',()=>{
   },800);
 });
 
-const SITE_VERSION='20260903v30';
+const SITE_VERSION='20260903v32';
 
 function setupInfiniteMarquee(wrap, speed){
   const track = wrap.querySelector('.marquee');
